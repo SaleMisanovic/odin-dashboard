@@ -218,8 +218,8 @@ body {
 .main .projects {
   grid-column: 1/1;
   display: grid;
-  grid-template-rows: 40px repeat(auto-fit, minmax(200px, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: 40px repeat(auto-fit, minmax(150px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
 }
@@ -227,20 +227,88 @@ body {
   grid-row: 1/1;
   grid-column: 1/-1;
   padding-top: 20px;
+  font-size: 20px;
 }
 .main .projects .project-item {
   background-color: white;
   border-radius: 10px;
-  border-left: 5px solid #f59e0b;
+  border-left: 10px solid #f59e0b;
   padding: 20px;
 }
 .main .projects .project-item p {
   font-size: 14px;
   color: #8b8f93;
 }
+.main .projects .project-item .project-item-icons {
+  padding-top: 10px;
+  position: relative;
+  left: 70%;
+  top: 20%;
+}
+.main .projects .project-item .project-item-icons img {
+  height: 20px;
+  margin: 5px;
+}
 .main .projects-side {
   grid-column: 2/2;
-  background-color: aliceblue;
+  display: grid;
+  grid-template-rows: 40px 350px 40px 250px;
+  gap: 20px;
+  padding: 20px;
+}
+.main .projects-side h2 {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 20px;
+}
+.main .projects-side .announcement-list {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+}
+.main .projects-side .announcement-list .announcement-single {
+  border-bottom: #8b8f93 1px solid;
+  padding-bottom: 10px;
+}
+.main .projects-side .announcement-list .announcement-single h4 {
+  font-size: 14px;
+}
+.main .projects-side .announcement-list .announcement-single p {
+  font-size: 12px;
+  color: #8b8f93;
+  padding-top: 5px;
+}
+.main .projects-side .announcement-list .announcement-single:nth-child(2) {
+  margin-top: 10px;
+}
+.main .projects-side .announcement-list .announcement-single:nth-child(3) {
+  margin-top: 10px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+}
+.main .projects-side .users {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 20px;
+}
+.main .projects-side .users .single-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.main .projects-side .users .single-user img {
+  height: 35px;
+}
+.main .projects-side .users .single-user div p {
+  font-size: 12px;
+  margin: 3px;
+}
+.main .projects-side .users .single-user div p:nth-child(2) {
+  color: #8b8f93;
 }
 
 /*# sourceMappingURL=style.css.map */

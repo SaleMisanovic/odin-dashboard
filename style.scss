@@ -226,31 +226,99 @@ body {
   .projects {
     grid-column: 1/1;
     display: grid;
-    grid-template-rows: 40px repeat(auto-fit,minmax(200px,1fr));
-    grid-template-columns:repeat(auto-fit, minmax(200px,1fr));
+    grid-template-rows: 40px repeat(auto-fit,minmax(150px,1fr));
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
     gap: 20px;
     padding: 20px;
     h2{
       grid-row: 1/1;
       grid-column: 1/-1;
       padding-top: 20px;
+      font-size: 20px;
     }
     .project-item {
       background-color: white;
       border-radius: 10px;
-      border-left: 5px solid #f59e0b;
+      border-left: 10px solid #f59e0b;
       padding: 20px;
-      h3{
-      
-      }
       p{
         font-size: 14px;
         color: #8b8f93;
+      }
+      .project-item-icons{
+        padding-top: 10px;
+        position: relative;
+        left: 70%;
+        top: 20%;
+        img{
+          height: 20px;
+          margin: 5px;
+        }
       }
     }
   }
   .projects-side{
     grid-column: 2/2;
-    background-color: aliceblue;
+    display: grid;
+    grid-template-rows:40px 350px 40px 250px;
+    gap: 20px;
+    padding: 20px;
+    h2{
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-size: 20px;
+    }
+
+    .announcement-list{
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      display: grid;
+      .announcement-single{
+        border-bottom: #8b8f93 1px solid;
+        padding-bottom: 10px;
+        h4{
+          font-size: 14px;
+        }
+        p{
+          font-size: 12px;
+          color: #8b8f93;
+          padding-top: 5px;
+        }
+      }
+      .announcement-single:nth-child(2){
+        margin-top: 10px;
+      }
+      .announcement-single:nth-child(3){
+        margin-top: 10px;
+        padding-bottom: 0px;
+        border-bottom: 0px;
+      }
+    }
+    .users{
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      display: grid;
+      grid-template-rows: repeat(4,1fr);
+      gap:20px;
+      .single-user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img{
+          height:35px;
+        }
+        div{
+          p{
+            font-size: 12px;
+            margin: 3px;
+          }
+          p:nth-child(2){
+            color: #8b8f93;
+          }
+        }
+      }
+    }
   }
 }
